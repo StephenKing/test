@@ -3,7 +3,7 @@ node {
         $class: 'GitSCM',
         userRemoteConfigs: [
             [
-                url: scm.url
+                url: scm.getUserRemoteConfigs()[0].getUrl()
             ]
         ],
         branches: [
